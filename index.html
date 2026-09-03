@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide du cours d'alphabétisation — IPEFA Seraing, site OVA Remouchamps</title>
+<meta name="description" content="Informations pratiques et organisation de l'année 2026-2027 : horaires, présences, évaluations, communication et vie en classe.">
+<style>
+  :root{
+    --bg:#14171c;
+    --surface:#1b1f26;
+    --surface-2:#232833;
+    --border:rgba(255,255,255,.12);
+    --text:#eef1f5;
+    --text-muted:#aeb6c2;
+    --link:#9cc4ff;
+    --blue:#8ab4ff;
+    --teal:#7fe0d3;
+    --green:#93dd93;
+    --orange:#f6c177;
+    --red:#ff9d9d;
+    --purple:#cdb2fd;
+    --radius:14px;
+    --maxw:44rem;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.01ms !important; transition-duration:.01ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:1.125rem;
+    line-height:1.65;
+    -webkit-text-size-adjust:100%;
+  }
+
+  img{max-width:100%;height:auto;display:block;border-radius:10px;}
+
+  a{color:var(--link);text-underline-offset:.15em;}
+  a:hover{color:#fff;}
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--orange);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .skip-link{
+    position:absolute;
+    left:1rem; top:-4rem;
+    background:var(--orange);
+    color:#1a1200;
+    padding:.75rem 1.25rem;
+    border-radius:8px;
+    font-weight:700;
+    z-index:100;
+    transition:top .2s ease;
+    text-decoration:none;
+  }
+  .skip-link:focus{top:1rem;}
+
+  header.hero{
+    padding:2.25rem 1.25rem 1.75rem;
+    border-bottom:1px solid var(--border);
+  }
+  .hero-inner{max-width:var(--maxw); margin:0 auto;}
+  .kicker{
+    color:var(--teal);
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    font-size:.85rem;
+    margin:0 0 .5rem;
+  }
+  h1{
+    font-size:clamp(1.6rem, 4vw + .5rem, 2.2rem);
+    line-height:1.25;
+    margin:0 0 .6rem;
+  }
+  .hero-meta{
+    color:var(--text-muted);
+    font-size:1rem;
+    margin:0;
+  }
+  .hero-meta strong{color:var(--text);}
+
+  .translate-note{
+    max-width:var(--maxw);
+    margin:1.25rem auto 0;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-left:4px solid var(--blue);
+    border-radius:var(--radius);
+    padding:.9rem 1.1rem;
+    font-size:.95rem;
+    color:var(--text-muted);
+  }
+  .translate-note strong{color:var(--text);}
+
+  nav.sections{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(20,23,28,.92);
+    backdrop-filter:saturate(140%) blur(8px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav-inner{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:.6rem 1.25rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem;
+  }
+  nav.sections a{
+    display:inline-block;
+    padding:.5rem .85rem;
+    border-radius:999px;
+    border:1px solid var(--border);
+    color:var(--text);
+    text-decoration:none;
+    font-size:.92rem;
+    background:var(--surface);
+    min-height:44px;
+    display:flex;
+    align-items:center;
+  }
+  nav.sections a[aria-current="true"]{
+    border-color:var(--orange);
+    background:var(--surface-2);
+    color:var(--orange);
+  }
+  nav.sections a:hover{border-color:var(--text-muted);}
+
+  main{max-width:var(--maxw); margin:0 auto; padding:0 1.25rem 3rem;}
+
+  section{
+    scroll-margin-top:4.2rem;
+    padding-top:2.6rem;
+  }
+  section:first-of-type{padding-top:2rem;}
+
+  section > h2{
+    font-size:1.5rem;
+    margin:0 0 .3rem;
+    padding-bottom:.5rem;
+    border-bottom:2px solid var(--border);
+  }
+  section > p.section-intro{
+    color:var(--text-muted);
+    margin:.3rem 0 1.5rem;
+  }
+
+  h3{
+    font-size:1.15rem;
+    margin:1.75rem 0 .6rem;
+  }
+  h3 .badge{
+    display:inline-block;
+    width:.6em;height:.6em;
+    border-radius:50%;
+    margin-right:.5em;
+  }
+
+  p{margin:.7rem 0;}
+  ul, ol{padding-left:1.4rem; margin:.7rem 0;}
+  li{margin:.4rem 0;}
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:1.1rem 1.25rem;
+    margin:1rem 0;
+  }
+
+  .callout{
+    border-radius:var(--radius);
+    border:1px solid var(--border);
+    border-left-width:5px;
+    padding:1rem 1.15rem;
+    margin:1.25rem 0;
+    background:var(--surface);
+  }
+  .callout p{margin:.3rem 0;}
+  .callout .label{
+    display:block;
+    font-weight:700;
+    margin-bottom:.3rem;
+    letter-spacing:.02em;
+  }
+  .callout.info{border-left-color:var(--blue);}
+  .callout.info .label{color:var(--blue);}
+  .callout.warn{border-left-color:var(--orange);}
+  .callout.warn .label{color:var(--orange);}
+  .callout.danger{border-left-color:var(--red);}
+  .callout.danger .label{color:var(--red);}
+  .callout.success{border-left-color:var(--green);}
+  .callout.success .label{color:var(--green);}
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:1rem 0;
+    font-size:.98rem;
+  }
+  .table-scroll{
+    overflow-x:auto;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    margin:1rem 0;
+  }
+  .table-scroll table{margin:0;}
+  th, td{
+    text-align:left;
+    padding:.65rem .8rem;
+    border-bottom:1px solid var(--border);
+    white-space:nowrap;
+  }
+  th{
+    background:var(--surface-2);
+    font-weight:700;
+    color:var(--text);
+  }
+  tr:last-child td{border-bottom:none;}
+  td:first-child, th:first-child{white-space:normal;}
+
+  figure{margin:1.4rem 0;}
+  figcaption{
+    font-size:.9rem;
+    color:var(--text-muted);
+    margin-top:.5rem;
+    text-align:center;
+  }
+
+  .level-grid{
+    display:grid;
+    gap:1rem;
+    grid-template-columns:1fr;
+    margin:1rem 0;
+  }
+  @media (min-width:640px){
+    .level-grid{grid-template-columns:1fr 1fr;}
+  }
+  .level-card{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .level-card h4{
+    margin:0;
+    padding:.7rem 1rem;
+    font-size:1.05rem;
+    color:#0d0f12;
+  }
+  .level-card .body{
+    padding:.9rem 1rem;
+    background:var(--surface);
+  }
+  .level-card .body ul{margin:.3rem 0; padding-left:1.2rem;}
+  .lvl-1 h4{background:var(--blue);}
+  .lvl-2 h4{background:var(--teal);}
+  .lvl-3 h4{background:var(--orange);}
+  .lvl-4 h4{background:var(--green);}
+
+  .link-list{list-style:none; padding:0; margin:1rem 0;}
+  .link-list li{
+    border:1px solid var(--border);
+    border-radius:10px;
+    margin:.5rem 0;
+  }
+  .link-list a{
+    display:block;
+    padding:.8rem 1rem;
+    text-decoration:none;
+    color:var(--text);
+  }
+  .link-list a span{
+    display:block;
+    color:var(--link);
+    text-decoration:underline;
+    font-size:.95rem;
+    margin-top:.15rem;
+  }
+
+  footer{
+    border-top:1px solid var(--border);
+    padding:2rem 1.25rem 3rem;
+  }
+  .footer-inner{
+    max-width:var(--maxw); margin:0 auto;
+    color:var(--text-muted);
+    font-size:.95rem;
+  }
+  footer strong{color:var(--text);}
+
+  .top-link{
+    position:fixed;
+    right:1rem; bottom:1rem;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    color:var(--text);
+    padding:.7rem 1rem;
+    border-radius:999px;
+    text-decoration:none;
+    font-size:.9rem;
+    box-shadow:0 6px 18px rgba(0,0,0,.4);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .2s ease;
+  }
+  .top-link.visible{opacity:1; pointer-events:auto;}
+
+  hr.sep{border:none; border-top:1px solid var(--border); margin:2rem 0;}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#contenu">Aller directement au contenu</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Cours d'alphabétisation — Alpha 3 &amp; Alpha 4</p>
+    <h1>Guide de l'étudiant — Informations pratiques et organisation de l'année</h1>
+    <p class="hero-meta">
+      <strong>IPEFA de Seraing</strong> — Site OVA Remouchamps<br>
+      Bibliothèque de Sougné-Remouchamps<br>
+      Professeur : <strong>Alexis Tagalidis</strong> — Année scolaire <strong>2026–2027</strong>
+    </p>
+  </div>
+  <div class="translate-note">
+    🌐 <strong>Lire cette page dans une autre langue :</strong> la plupart des navigateurs (Chrome, Edge, Safari…) proposent de traduire automatiquement une page web. Cherchez une icône de traduction dans la barre d'adresse, ou ouvrez le menu du navigateur et choisissez « Traduire la page ».
+  </div>
+</header>
+
+<nav class="sections" aria-label="Navigation rapide vers les sections">
+  <div class="nav-inner" id="navlinks">
+    <a href="#ecole">École &amp; horaires</a>
+    <a href="#parcours">Parcours &amp; méthode</a>
+    <a href="#communication">Communiquer</a>
+    <a href="#presences">Présences &amp; absences</a>
+    <a href="#evaluations">Évaluations &amp; réussite</a>
+    <a href="#acquis">Acquis par niveau</a>
+    <a href="#vie-en-classe">Vie en classe &amp; liens</a>
+  </div>
+</nav>
+
+<main id="contenu">
+
+  <!-- ============ ÉCOLE & HORAIRES ============ -->
+  <section id="ecole" aria-labelledby="ecole-h">
+    <h2 id="ecole-h">1. L'école et les horaires</h2>
+    <p class="section-intro">Où, quand, avec quel groupe.</p>
+
+    <div class="card">
+      <p><strong>IPEFA de Seraing — Site OVA Remouchamps</strong></p>
+      <p>Bibliothèque de Sougné-Remouchamps<br>Rue de la Reffe 9, 4920 Remouchamps</p>
+      <p>Cours les <strong>lundis, jeudis et vendredis</strong>.</p>
+      <p><a href="https://maps.google.com/?q=Rue+de+la+Reffe+9+4920+Remouchamps">Voir le lieu sur Google Maps ↗</a></p>
+    </div>
+
+    <h3>Horaires</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Groupe</th><th>Cours</th><th>Pause</th></tr></thead>
+        <tbody>
+          <tr><td>Alpha 3</td><td>8 h 50 – 12 h 10</td><td>10 h 20</td></tr>
+          <tr><td>Alpha 4</td><td>12 h 50 – 16 h 10</td><td>14 h 20</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ul>
+      <li>J'arrive quelques minutes avant le début du cours.</li>
+      <li>Si je suis en retard, je préviens le professeur par message privé.</li>
+      <li>Une adaptation liée à un bus doit être convenue avec le professeur. Elle ne devient pas une autorisation générale d'arriver en retard ou de partir plus tôt.</li>
+    </ul>
+
+    <h3>Jours sans cours annoncés en 2026–2027</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Période</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td>Vacances d'automne (Toussaint)</td><td>Du lundi 19 au vendredi 30 octobre 2026</td></tr>
+          <tr><td>Fête des morts</td><td>Lundi 2 novembre 2026</td></tr>
+          <tr><td>Commémoration de l'Armistice</td><td>Mercredi 11 novembre 2026</td></tr>
+          <tr><td>Vacances d'hiver (Noël)</td><td>Du lundi 21 décembre 2026 au vendredi 1ᵉʳ janvier 2027</td></tr>
+          <tr><td>Congé de détente</td><td>Du lundi 22 février au dimanche 7 mars 2027</td></tr>
+          <tr><td>Lundi de Pâques</td><td>Lundi 29 mars 2027</td></tr>
+          <tr><td>Vacances de printemps</td><td>Du lundi 26 avril au dimanche 9 mai 2027</td></tr>
+          <tr><td>Lundi de Pentecôte</td><td>Lundi 17 mai 2027</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout info">
+      <span class="label">À savoir</span>
+      <p>Toute modification est communiquée dans le groupe WhatsApp. Gardez aussi le calendrier officiel de l'école : il peut mentionner d'autres congés ou changements exceptionnels. L'horaire papier détaillé reste le document pratique de référence.</p>
+    </div>
+  </section>
+
+  <!-- ============ PARCOURS & MÉTHODE ============ -->
+  <section id="parcours" aria-labelledby="parcours-h">
+    <h2 id="parcours-h">2. Le parcours et la méthode</h2>
+    <p class="section-intro">Du parcours Alpha aux niveaux du français, et comment nous travaillons.</p>
+
+    <ul>
+      <li>Alpha 1, Alpha 2, Alpha 3 et Alpha 4 sont des <strong>niveaux d'alphabétisation</strong>.</li>
+      <li>Ils ne correspondent <strong>pas automatiquement</strong> aux niveaux A1, A2, B1 ou B2 du CECR (Cadre européen commun de référence pour les langues).</li>
+      <li>Alpha 1 n'est pas A1. Alpha 2 n'est pas A2. Il n'existe pas de niveau « A3 » dans le CECR.</li>
+      <li>Après Alpha 4, le Conseil des études peut orienter l'étudiant vers l'UEDB (passerelle) ou directement vers l'UF1, selon les acquis.</li>
+    </ul>
+
+    <figure>
+      <img src="assets/parcours-alpha-cecr.webp" alt="" loading="lazy" width="1200" height="1491">
+      <figcaption>Tableau du parcours Alpha vers les niveaux du CECR (contenu détaillé ci-dessous).</figcaption>
+    </figure>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Cours</th><th>Niveau CECR</th><th>Périodes</th></tr></thead>
+        <tbody>
+          <tr><td>Alpha 1</td><td>Non positionné</td><td>200</td></tr>
+          <tr><td>Alpha 2</td><td>Non positionné</td><td>200</td></tr>
+          <tr><td>Alpha 3</td><td>Non positionné</td><td>200</td></tr>
+          <tr><td>Alpha 4</td><td>Non positionné</td><td>200</td></tr>
+          <tr><td>UEDB (passerelle)</td><td>Non positionné</td><td>120</td></tr>
+          <tr><td>UF1</td><td>A1</td><td>120</td></tr>
+          <tr><td>UF2</td><td>A2</td><td>120</td></tr>
+          <tr><td>UF3</td><td>B1.1</td><td>120</td></tr>
+          <tr><td>UF4</td><td>B1.2</td><td>120</td></tr>
+          <tr><td>UF5</td><td>B1.3</td><td>120</td></tr>
+          <tr><td>UF6</td><td>B1.4</td><td>120</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color:var(--text-muted); font-size:.92rem;">L'UEDA (ancienne voie) n'est plus organisée. Un niveau Alpha compte 200 périodes : davantage de temps pour apprendre à lire et à écrire. Une UF compte 120 périodes, souvent réparties sur moins de jours de cours par semaine.</p>
+
+    <h3>Le matériel : deux cahiers</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Cahier</th><th>Utilisation</th></tr></thead>
+        <tbody>
+          <tr><td>Cahier de classe</td><td>Textes, vocabulaire, exercices, corrections, productions et traces des apprentissages.</td></tr>
+          <tr><td>Cahier d'exercices</td><td>Exercices supplémentaires, essais et entraînement régulier à la maison.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Je note la date et le titre à chaque nouvelle page.</p>
+
+    <h3>S'autocorriger</h3>
+    <ol>
+      <li>Je fais l'exercice sans regarder la réponse.</li>
+      <li>Je compare ma réponse au corrigé ou au modèle.</li>
+      <li>Je repère précisément l'erreur.</li>
+      <li>Je corrige de manière visible, si possible dans une autre couleur, sans effacer toute ma première réponse.</li>
+      <li>Je recommence un exemple similaire et je demande une explication si je ne comprends pas.</li>
+    </ol>
+    <div class="callout warn">
+      <span class="label">Autocorrection ≠ copie</span>
+      <p>Recopier directement le corrigé ne permet pas de voir ce que je sais faire. Une erreur conservée puis corrigée aide à apprendre.</p>
+    </div>
+
+    <h3>Comment allons-nous apprendre ?</h3>
+    <p><strong>Je cherche d'abord :</strong> je relis la consigne, j'utilise mes outils, je compare avec un exemple, puis je demande de l'aide.</p>
+    <p><strong>Je mobilise la langue :</strong> je parle en français en classe, je lis régulièrement, j'écris même si ce n'est pas parfait, je corrige et je recommence.</p>
+    <div class="callout success">
+      <span class="label">L'erreur aide à apprendre</span>
+      <p>Le but n'est pas d'être parfait tout de suite. Le but est de comprendre, essayer, recevoir une correction et progresser.</p>
+    </div>
+  </section>
+
+  <!-- ============ COMMUNICATION ============ -->
+  <section id="communication" aria-labelledby="communication-h">
+    <h2 id="communication-h">3. Comment communiquer avec le professeur</h2>
+    <p class="section-intro">Une information utile à tout le monde va dans le groupe. Une information personnelle reste privée.</p>
+
+    <ul>
+      <li>Le groupe WhatsApp est un <strong>canal officiel</strong> du cours. Je le consulte régulièrement.</li>
+      <li>Ne pas avoir lu un message n'annule pas ses conséquences.</li>
+      <li>Je ne diffuse pas la photo, les coordonnées ou les informations personnelles d'un autre étudiant sans son accord.</li>
+    </ul>
+
+    <figure>
+      <img src="assets/whatsapp-canaux.webp" alt="" loading="lazy" width="900" height="1350">
+      <figcaption>Groupe WhatsApp pour les informations communes, message privé pour tout ce qui est personnel.</figcaption>
+    </figure>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Dans le groupe WhatsApp</th><th>En message privé</th></tr></thead>
+        <tbody>
+          <tr><td>Informations utiles à toute la classe</td><td>Retard ou absence annoncée</td></tr>
+          <tr><td>Questions de français ou sur le cours</td><td>Certificat médical ou document personnel</td></tr>
+          <tr><td>Grève des bus, neige, école fermée, changement général</td><td>Information de santé ou situation personnelle</td></tr>
+          <tr><td>Consignes et documents destinés au groupe</td><td>Question qui concerne uniquement l'étudiant</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout info">
+      <span class="label">Canal officiel</span>
+      <p>Utilisez le groupe WhatsApp du cours ou un message privé au professeur. N'envoyez jamais de document personnel dans le groupe.</p>
+    </div>
+  </section>
+
+  <!-- ============ PRÉSENCES & ABSENCES ============ -->
+  <section id="presences" aria-labelledby="presences-h">
+    <h2 id="presences-h">4. Présences, absences et justificatifs</h2>
+    <p class="section-intro">Deux règles de présence, selon la situation de l'étudiant.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Situation</th><th>Présence minimale</th><th>Repère sur 50 cours</th></tr></thead>
+        <tbody>
+          <tr><td>Étudiants au CPAS</td><td>80 % (minimum réglementaire)</td><td>40 présences — 10 absences maximum</td></tr>
+          <tr><td>Étudiants en centre de la Croix-Rouge</td><td>70 % (tolérance exceptionnelle)</td><td>35 présences — 15 absences maximum</td></tr>
+          <tr><td>Sous 70 %</td><td>Seuil minimal non atteint</td><td>16 absences = 68 % → échec automatique</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout danger">
+      <span class="label">Important</span>
+      <p>La tolérance de 70 % ne transforme pas 30 % d'absences en un droit : elle concerne uniquement les étudiants hébergés dans un centre de la Croix-Rouge. L'objectif réglementaire reste 80 %. Moins de 70 % de présences entraîne l'échec automatique de la totalité du cours.</p>
+    </div>
+
+    <figure>
+      <img src="assets/calendrier-presences.webp" alt="" loading="lazy" width="1400" height="853">
+      <figcaption>Repère pour un calendrier de 50 cours : 80 % (règle générale) ou 70 % (Croix-Rouge, tolérance exceptionnelle).</figcaption>
+    </figure>
+
+    <h3><span class="badge" style="background:var(--red);"></span>Quand une absence est-elle comptabilisée (injustifiée) ?</h3>
+    <p>Sans certificat médical ou autre preuve officiellement acceptée, l'absence est comptabilisée. Cela concerne notamment :</p>
+    <ul>
+      <li>mal de tête, fatigue, maladie personnelle ou enfant malade sans certificat médical ;</li>
+      <li>lendemain de fête ou consommation d'alcool ;</li>
+      <li>téléphone ou jeu jusque très tard dans la nuit ;</li>
+      <li>visite chez le médecin sans certificat médical ;</li>
+      <li>rendez-vous au CGRA ou autre rendez-vous prévisible pendant les heures de cours ;</li>
+      <li>participation à Bonjour Belgique / Hello Belgium ;</li>
+      <li>motif personnel annoncé sans document accepté.</li>
+    </ul>
+    <div class="callout warn">
+      <span class="label">Absence annoncée ≠ absence justifiée</span>
+      <p>Prévenir le professeur est obligatoire et utile, mais un message WhatsApp n'est pas un justificatif officiel.</p>
+    </div>
+
+    <h3><span class="badge" style="background:var(--green);"></span>Quand une absence est-elle justifiée ?</h3>
+    <ul>
+      <li>Le certificat médical concerne l'étudiant ou son enfant malade.</li>
+      <li>J'envoie une photo nette au professeur par <strong>message WhatsApp privé</strong>, au maximum <strong>48 heures</strong> après le début de l'absence.</li>
+      <li>Je conserve toujours le document original et je le présente si l'école le demande.</li>
+      <li>Une preuve de rendez-vous, une ordonnance, une carte de consultation ou un simple message ne remplace pas le certificat médical.</li>
+      <li>Une absence couverte par un certificat accepté n'est pas ajoutée dans « Je compte mes absences ».</li>
+    </ul>
+
+    <figure>
+      <img src="assets/absences-justifiees.webp" alt="" loading="lazy" width="1024" height="1502">
+      <figcaption>Absence justifiée : certificat médical envoyé en privé, au plus tard 48 heures après l'absence.</figcaption>
+    </figure>
+
+    <h3>Je compte mes absences</h3>
+    <p style="color:var(--text-muted); font-size:.92rem;">50 cours au total — il faut au moins 35 présences (70 %) — 15 absences maximum.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Absences</th><th>Présences</th><th>Pourcentage</th></tr></thead>
+        <tbody>
+          <tr><td>0</td><td>50</td><td>100 %</td></tr>
+          <tr><td>1</td><td>49</td><td>98 %</td></tr>
+          <tr><td>2</td><td>48</td><td>96 %</td></tr>
+          <tr><td>3</td><td>47</td><td>94 %</td></tr>
+          <tr><td>4</td><td>46</td><td>92 %</td></tr>
+          <tr><td>5</td><td>45</td><td>90 %</td></tr>
+          <tr><td>6</td><td>44</td><td>88 %</td></tr>
+          <tr><td>7</td><td>43</td><td>86 %</td></tr>
+          <tr><td>8</td><td>42</td><td>84 %</td></tr>
+          <tr><td>9</td><td>41</td><td>82 %</td></tr>
+          <tr><td>10</td><td>40</td><td>80 %</td></tr>
+          <tr><td>11</td><td>39</td><td>78 %</td></tr>
+          <tr><td>12</td><td>38</td><td>76 %</td></tr>
+          <tr><td>13</td><td>37</td><td>74 %</td></tr>
+          <tr><td>14</td><td>36</td><td>72 %</td></tr>
+          <tr><td>15</td><td>35</td><td>70 %</td></tr>
+          <tr><td>16</td><td>34</td><td>68 % — sous le seuil</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color:var(--text-muted); font-size:.92rem;">Dans « Je compte mes absences », je coche uniquement les absences injustifiées.</p>
+
+    <h3>Bus, neige et force majeure</h3>
+    <p style="color:var(--text-muted); font-size:.92rem;">Prévenir ne signifie pas automatiquement que l'absence est justifiée.</p>
+
+    <p><strong>Grève ou perturbation TEC</strong></p>
+    <ul>
+      <li>Je vérifie ma ligne exacte dans l'application TEC ou sur le site officiel, et les départs réellement supprimés dans les deux sens si nécessaire.</li>
+      <li>Je préviens le professeur avant le cours et je garde une capture d'écran datée.</li>
+      <li>Je télécharge l'attestation de perturbation dès qu'elle est disponible.</li>
+      <li>Une attestation générale de grève ne suffit pas toujours : elle doit correspondre à mon trajet.</li>
+    </ul>
+
+    <p><strong>Neige ou école fermée</strong></p>
+    <ul>
+      <li>Je consulte le groupe WhatsApp. Sans message d'annulation, le cours est considéré comme maintenu.</li>
+      <li>Une situation locale réellement dangereuse doit être signalée rapidement avec les éléments utiles.</li>
+    </ul>
+
+    <p><strong>Force majeure</strong></p>
+    <ul>
+      <li>La situation doit être réelle et imprévisible ; je fournis une preuve ou un document si possible.</li>
+      <li>L'école ou le Conseil des études décide si le motif est accepté.</li>
+      <li>Un rendez-vous administratif, médical ou personnel doit, si possible, être pris en dehors des heures de cours.</li>
+    </ul>
+    <p><a href="https://www.letec.be/disruptions">Consulter les perturbations TEC ↗</a></p>
+  </section>
+
+  <!-- ============ ÉVALUATIONS & RÉUSSITE ============ -->
+  <section id="evaluations" aria-labelledby="evaluations-h">
+    <h2 id="evaluations-h">5. Évaluations et réussite</h2>
+    <p class="section-intro">Ce qui se passe pendant l'année, et comment réussir le niveau.</p>
+
+    <h3>Mini-interrogation toutes les cinq leçons</h3>
+    <ul>
+      <li>Un thème comprend cinq leçons.</li>
+      <li>L'interrogation a lieu <strong>au cours suivant</strong>, pas le jour où la cinquième leçon se termine.</li>
+      <li>Elle dure environ 30 minutes et porte sur le vocabulaire, la grammaire, la compréhension et une courte production écrite ou orale.</li>
+      <li>Le professeur annonce si elle est formative, certificative ou mixte.</li>
+    </ul>
+
+    <h3>Évaluations certificatives et dispenses</h3>
+    <ul>
+      <li>Elles correspondent aux acquis d'apprentissage du niveau et sont annoncées environ deux semaines à l'avance.</li>
+      <li>Elles ont lieu à différents moments selon la progression du groupe.</li>
+      <li>Un acquis réussi est conservé pour la session concernée ; les acquis non encore validés restent à présenter en première session.</li>
+      <li>Un examen oral peut avoir lieu pendant les heures de cours si le niveau le prévoit.</li>
+    </ul>
+
+    <figure>
+      <img src="assets/evaluations-sessions.webp" alt="" loading="lazy" width="1400" height="989">
+      <figcaption>Un acquis réussi est conservé ; un acquis raté repasse uniquement en deuxième session.</figcaption>
+    </figure>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Repère</th><th>Fonction</th></tr></thead>
+        <tbody>
+          <tr><td>Exercice</td><td>S'entraîner, essayer, corriger et recommencer. Ne donne pas nécessairement un résultat officiel.</td></tr>
+          <tr><td>Évaluation formative</td><td>Voir ce qui est compris et ce qui doit encore être travaillé.</td></tr>
+          <tr><td>Évaluation certificative</td><td>Vérifier officiellement un ou plusieurs acquis d'apprentissage.</td></tr>
+          <tr><td>Session</td><td>Clôturer les évaluations, délibérer et communiquer les résultats officiels.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Réussir le niveau</h3>
+    <p><strong>Conditions de présentation :</strong></p>
+    <ul>
+      <li>Suivre la formation et atteindre le seuil de présence applicable (80 % ou 70 % Croix-Rouge).</li>
+      <li>Présenter au moins 70 % des mini-interrogations.</li>
+      <li>Présenter 100 % des évaluations certificatives.</li>
+    </ul>
+
+    <p><strong>1ʳᵉ session :</strong> le Conseil des études examine tous les résultats certificatifs. Si tous les acquis sont réussis, l'étudiant reçoit l'attestation de réussite et passe au niveau suivant. Sinon, il va en 2ᵉ session uniquement pour les acquis non réussis.</p>
+    <p><strong>2ᵉ session :</strong> date et modalités communiquées avant la fin de l'année. L'étudiant représente uniquement les acquis non réussis. Si tous les acquis repris atteignent au moins 50 %, il reçoit l'attestation ; sinon, il recommence le niveau.</p>
+
+    <figure>
+      <img src="assets/reussir-niveau.webp" alt="" loading="lazy" width="1400" height="795">
+      <figcaption>Chaque acquis d'apprentissage doit atteindre un seuil ≥ 50 % pour réussir le niveau.</figcaption>
+    </figure>
+
+    <div class="callout success">
+      <span class="label">Seuil de réussite</span>
+      <p>Tous les acquis doivent atteindre au moins 50 %. Une moyenne générale ne compense pas un acquis non réussi.</p>
+    </div>
+
+    <h3>Pendant une évaluation</h3>
+    <p><strong>Avant :</strong> je révise les acquis annoncés, je demande une explication si une consigne n'est pas claire, j'arrive à l'heure et je présente une pièce d'identité si elle est demandée.</p>
+    <p><strong>Pendant :</strong> je travaille seul, je respecte la durée et les consignes, j'utilise uniquement le matériel et les aides autorisés, j'éteins et je range mon téléphone (sauf consigne contraire), je remets toutes les feuilles demandées.</p>
+    <div class="callout danger">
+      <span class="label">Absence, triche ou tentative de triche</span>
+      <p>Une absence injustifiée peut envoyer les acquis concernés directement en deuxième session. En première session, une triche ou une tentative de triche envoie automatiquement les acquis concernés en deuxième session ; en deuxième session, elle entraîne l'échec. Un traducteur, un téléphone, une application ou un outil d'intelligence artificielle est interdit si la consigne ne l'autorise pas explicitement.</p>
+    </div>
+
+    <h3>Résultats et recours</h3>
+    <ul>
+      <li>La décision officielle appartient au Conseil des études. Un étudiant ajourné ou refusé reçoit la raison de la non-réussite et la liste des acquis concernés.</li>
+      <li>Il peut consulter ses évaluations et demander une copie selon les modalités du règlement.</li>
+    </ul>
+    <p><strong>Recours interne obligatoire :</strong> concerne une décision d'échec ou une irrégularité de procédure (pas une demande de meilleure note). L'étudiant dispose de <strong>4 jours calendrier</strong> après la communication officielle du résultat pour envoyer une contestation écrite et motivée à la direction, par courrier recommandé ou déposée en main propre contre accusé de réception.</p>
+    <p><strong>Recours externe éventuel :</strong> possible uniquement après le recours interne, dans un délai de <strong>7 jours calendrier</strong> après réception de la décision interne motivée. Une copie est envoyée à la direction de l'établissement.</p>
+    <div class="card">
+      <p><strong>Adresse du recours externe</strong></p>
+      <p>Commission de recours de l'Enseignement pour Adultes<br>Rue Adolphe Lavallée 1, 1080 Bruxelles<br><a href="mailto:recours.ea@cfwb.be">recours.ea@cfwb.be</a></p>
+      <p><a href="https://www.enseignement.be/demarches/demarche/2285-contester-une-decision-du-conseil-des-etudes-dans-lenseignement-pour-adultes">Consulter la procédure officielle ↗</a></p>
+    </div>
+  </section>
+
+  <!-- ============ ACQUIS PAR NIVEAU ============ -->
+  <section id="acquis" aria-labelledby="acquis-h">
+    <h2 id="acquis-h">6. Acquis d'apprentissage, par niveau</h2>
+    <p class="section-intro">Pour réussir, tous les acquis du niveau suivi doivent atteindre le seuil de 50 %.</p>
+
+    <div class="level-grid">
+      <div class="level-card lvl-1">
+        <h4>Alpha 1</h4>
+        <div class="body">
+          <ul>
+            <li>Comprendre et produire de courts énoncés simples de la vie quotidienne.</li>
+            <li>Se repérer sur une page : sens de lecture, date, signature, emplacement d'une réponse.</li>
+            <li>Reconnaître des pictogrammes, des logos et des mots indispensables.</li>
+            <li>Identifier la nature et la fonction d'écrits authentiques du quotidien.</li>
+            <li>Écrire son nom et son adresse dans un formulaire.</li>
+            <li>Copier en cursive à partir d'un modèle imprimé, en majuscules ou en minuscules.</li>
+            <li>Écrire sans modèle des mots simples, des nombres et des informations connues.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="level-card lvl-2">
+        <h4>Alpha 2</h4>
+        <div class="body">
+          <ul>
+            <li>Comprendre des énoncés oraux élémentaires contenant plusieurs informations.</li>
+            <li>Communiquer dans une situation concrète et familière avec des phrases simples et cohérentes.</li>
+            <li>Décoder une image et identifier des écrits authentiques de la vie quotidienne.</li>
+            <li>Lire un texte simple et court en respectant les pauses.</li>
+            <li>Utiliser les correspondances entre les lettres et les sons.</li>
+            <li>Écrire en cursive un texte court et simple avec les outils disponibles.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="level-card lvl-3">
+        <h4>Alpha 3</h4>
+        <div class="body">
+          <ul>
+            <li>Comprendre des énoncés relativement complexes liés aux pratiques sociales.</li>
+            <li>Communiquer avec des phrases cohérentes, coordonnées ou reliées.</li>
+            <li>Utiliser activement les correspondances entre les lettres et les sons.</li>
+            <li>Construire le sens de documents authentiques et fonctionnels de la vie quotidienne.</li>
+            <li>Identifier l'organisation générale d'un écrit.</li>
+            <li>Produire un texte de 5 à 10 phrases à partir de supports fournis.</li>
+            <li>Effectuer des calculs simples avec des nombres entiers jusqu'à 100.</li>
+          </ul>
+          <p style="color:var(--text-muted); font-size:.92rem; margin-top:.6rem;">Pour réussir, on observe aussi la correction de l'expression orale et écrite, ainsi que la précision de la compréhension orale et écrite.</p>
+        </div>
+      </div>
+      <div class="level-card lvl-4">
+        <h4>Alpha 4</h4>
+        <div class="body">
+          <ul>
+            <li>Formuler une demande claire et structurée.</li>
+            <li>Lire un texte de difficulté moyenne lié à la vie quotidienne ou à l'actualité.</li>
+            <li>Raconter clairement un événement réel ou imaginaire.</li>
+            <li>Effectuer des calculs simples avec des nombres entiers jusqu'à 100.</li>
+          </ul>
+          <p style="color:var(--text-muted); font-size:.92rem; margin-top:.6rem;">Pour réussir, on observe aussi l'intégration des différentes compétences et l'autonomie dans la réalisation de la tâche.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIE EN CLASSE & LIENS ============ -->
+  <section id="vie-en-classe" aria-labelledby="vie-h">
+    <h2 id="vie-h">7. Vivre ensemble, à distance, et liens utiles</h2>
+    <p class="section-intro">Un cadre calme, propre et respectueux aide tout le monde à apprendre.</p>
+
+    <h3>Dans la classe et les espaces partagés</h3>
+    <ul>
+      <li>Je respecte les autres étudiants, le professeur, le personnel, les différences et le travail du groupe.</li>
+      <li>Je laisse chacun parler et apprendre.</li>
+      <li>Je garde mon téléphone silencieux, sauf lorsqu'il est utilisé pour le cours.</li>
+      <li>Pendant les pauses, je n'impose pas aux autres un appel en haut-parleur, une musique ou une vidéo audible.</li>
+      <li>Je prends soin du matériel, je range ma place et je ne laisse aucun déchet.</li>
+      <li>Je signale immédiatement une dégradation, une situation dangereuse ou un problème de sécurité.</li>
+    </ul>
+
+    <h3>Toilettes et lavage des mains</h3>
+    <ul>
+      <li>Je laisse les toilettes propres et je me lave soigneusement les mains à l'eau et au savon.</li>
+      <li>J'utilise la poubelle prévue pour les papiers, protections et autres déchets.</li>
+      <li>Je ne jette rien dans l'urinoir.</li>
+      <li>Je préviens un responsable si du savon, du papier ou un équipement manque.</li>
+    </ul>
+
+    <h3>Bien trier les déchets PMC</h3>
+    <ul>
+      <li>Dans le sac bleu : emballages en plastique, emballages métalliques et cartons à boissons.</li>
+      <li>Un objet en plastique n'est pas automatiquement un PMC : le mot important est « emballage ».</li>
+      <li>Pas dans le PMC : jouets, feutres, bottes, sandales, grands objets, piles, appareils électroniques et déchets dangereux.</li>
+      <li>En cas de doute, je regarde l'étiquette de la poubelle ou le guide Intradel. Je ne devine pas.</li>
+    </ul>
+    <p><a href="https://www.intradel.be/trier-ses-dechets/guide-du-tri.htm">Plus d'informations sur le tri des déchets ↗</a></p>
+
+    <h3>Si le cours doit se faire à distance</h3>
+    <ul>
+      <li>Le professeur explique l'organisation dans le groupe WhatsApp.</li>
+      <li>Je consulte les consignes, les documents, la date et l'heure du travail.</li>
+      <li>Je réalise les activités dans le délai demandé et je garde une trace de mon travail. Je pose une question si je suis bloqué.</li>
+      <li>Ouvrir un message ou télécharger un fichier ne suffit pas : la participation doit être réelle et vérifiable.</li>
+      <li>Je n'envoie pas de document personnel dans le groupe et je n'enregistre pas les autres sans autorisation.</li>
+    </ul>
+    <div class="callout info">
+      <span class="label">Même à distance</span>
+      <p>Les règles de présence, de respect, de remise des travaux et d'évaluation continuent à s'appliquer.</p>
+    </div>
+
+    <hr class="sep">
+
+    <h3>Documents officiels</h3>
+    <ul>
+      <li>Règlement général des études de l'enseignement pour adultes</li>
+      <li>Règlement d'ordre intérieur de l'établissement</li>
+      <li>Dossiers pédagogiques officiels des niveaux Alpha 1 à Alpha 4</li>
+      <li>Calendrier officiel de l'année 2026–2027</li>
+      <li>Décisions du Conseil des études</li>
+    </ul>
+
+    <h3>Liens utiles</h3>
+    <ul class="link-list">
+      <li><a href="https://www.letec.be/">TEC — site officiel<span>Horaires et informations générales ↗</span></a></li>
+      <li><a href="https://www.letec.be/disruptions">TEC — perturbations<span>Vérifier une ligne précise et conserver une preuve datée ↗</span></a></li>
+      <li><a href="https://www.letec.be/View/Nous_contacter/3456">TEC — attestations ↗</a></li>
+      <li><a href="https://www.intradel.be/trier-ses-dechets/guide-du-tri.htm">Intradel — guide du tri ↗</a></li>
+      <li><a href="https://www.provincedeliege.be/sites/default/files/media/3415/RGE_enseignement_pour_adultes_secondaire.pdf">Règlement général des études ↗</a></li>
+      <li><a href="https://www.enseignement.be/demarches/demarche/2285-contester-une-decision-du-conseil-des-etudes-dans-lenseignement-pour-adultes">Procédure de recours ↗</a></li>
+      <li><a href="https://www.provincedeliege.be/fr/enseignement/adultes">Enseignement pour adultes — Province de Liège ↗</a></li>
+      <li><a href="https://maps.google.com/?q=Rue+de+la+Reffe+9+4920+Remouchamps">Plan d'accès ↗</a></li>
+    </ul>
+
+    <div class="callout warn">
+      <span class="label">Hiérarchie des règles</span>
+      <p>Cette page explique et résume. En cas de différence, le Règlement général des études, le règlement d'ordre intérieur et les décisions du Conseil des études restent prioritaires.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p><strong>Cours d'alphabétisation</strong> — IPEFA de Seraing, site OVA Remouchamps<br>
+    Bibliothèque de Sougné-Remouchamps, Rue de la Reffe 9, 4920 Remouchamps<br>
+    Professeur : Alexis Tagalidis — Année scolaire 2026–2027</p>
+    <p>Une question ? Demandez au professeur.</p>
+  </div>
+</footer>
+
+<a href="#contenu" class="top-link" id="topLink">↑ Haut de page</a>
+
+<script>
+(function(){
+  // Back-to-top visibility
+  var topLink = document.getElementById('topLink');
+  var onScroll = function(){
+    if(window.scrollY > 600){ topLink.classList.add('visible'); }
+    else{ topLink.classList.remove('visible'); }
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Highlight current section in nav
+  var links = Array.prototype.slice.call(document.querySelectorAll('#navlinks a'));
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main > section[id]'));
+
+  if('IntersectionObserver' in window){
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        var link = map[entry.target.id];
+        if(!link) return;
+        if(entry.isIntersecting){
+          links.forEach(function(l){ l.removeAttribute('aria-current'); });
+          link.setAttribute('aria-current', 'true');
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px', threshold:0});
+    sections.forEach(function(s){ observer.observe(s); });
+  }
+})();
+</script>
+
+</body>
+</html>
